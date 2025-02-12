@@ -3,6 +3,7 @@
     <!-- v-model문법을 사용하면 양방향 데이터 바인딩 -->
     <input type="text" v-model="value">
     <button @click="showValue()">변수변경사항확인</button>
+    <button @click="changeValue()">변수변경</button>
 </template>
 <script>
     export default {
@@ -19,6 +20,9 @@
         methods:{
             showValue(){
                 alert(this.value)
+            },
+            changeValue(){
+                this.value="C++";
             }
         }
     }

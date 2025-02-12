@@ -1,6 +1,7 @@
 // import TestVue1 from '@/views/TestVue1.vue';
 import{createRouter, createWebHistory} from 'vue-router'; //뷰 라유터 라이브러리에 있는 함수
 import { practiceRouter } from './practiceRouter';
+import { memberRouter } from './memberRouter';
 
 const routes = [
 //    {    
@@ -9,6 +10,7 @@ const routes = [
 //         component : TestVue1 //test1 url경로로 가면 TestVue1 화면으로 라우팅해주겠다
 //    },
     ...practiceRouter,
+    ...memberRouter
 ]
 
 const router = createRouter({
